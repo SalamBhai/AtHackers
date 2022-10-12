@@ -1,0 +1,12 @@
+c:\Users\user\Desktop\AtHackers\AtHackers\bin\Debug\net6.0\AtHackers.deps.json
+c:\Users\user\Desktop\AtHackers\AtHackers\bin\Debug\net6.0\AtHackers.dll
+c:\Users\user\Desktop\AtHackers\AtHackers\bin\Debug\net6.0\AtHackers.pdb
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.csproj.AssemblyReference.cache
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.AssemblyInfoInputs.cache
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.AssemblyInfo.cs
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.csproj.CoreCompileInputs.cache
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.dll
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\refint\AtHackers.dll
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\AtHackers.pdb
+c:\Users\user\Desktop\AtHackers\AtHackers\obj\Debug\net6.0\ref\AtHackers.dll
