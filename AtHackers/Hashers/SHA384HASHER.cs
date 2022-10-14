@@ -33,6 +33,7 @@ namespace AtHackers.Hashers
         #region  ValidatePassword
         public override bool ValidatePassword(string plainInput,string HashedPassword)
         {
+            if(string.IsNullOrEmpty(plainInput) || string.IsNullOrEmpty(plainInput)) throw new ValueCannotBeNullException();
             if (!HashedPassword.Contains("@")) throw new InvalidSaltException();
             var normalPasswordAndSalt = RemovePeppers(HashedPassword);
             var hashedPasswordAndSalt = normalPasswordAndSalt.Split('@');
@@ -41,9 +42,9 @@ namespace AtHackers.Hashers
                 return false;
             }
             var salt = hashedPasswordAndSalt[0];
-            if (salt == null)
+            if (string.IsNullOrEmpty(salt) && salt != "$")
             {
-                return false;
+                  throw new ArgumentException("Cannot Accept A Null Value For The Required Parameter: Salt");
             }
 
             var hashOfPasswordToCheck = GenerateHashForValidation(plainInput, salt);

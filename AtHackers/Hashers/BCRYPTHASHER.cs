@@ -18,6 +18,7 @@ namespace AtHackers.Hashers
 
         public static bool ValidatePassword(string InputText, string HashedPassword, bool IsEnhancedBCrypt = true)
         {
+            if(string.IsNullOrEmpty(InputText) || string.IsNullOrEmpty(HashedPassword)) throw new ValueCannotBeNullException();
             if(!IsEnhancedBCrypt) return BCrypt.Net.BCrypt.Verify(InputText,HashedPassword);
             return BCrypt.Net.BCrypt.EnhancedVerify(InputText,HashedPassword,BCrypt.Net.HashType.SHA512);
         }
