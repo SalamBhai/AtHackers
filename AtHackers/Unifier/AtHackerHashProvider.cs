@@ -2,9 +2,21 @@ using AtHackers.Exceptions;
 using AtHackers.Hashers;
 namespace AtHackers.Unifier
 {
+    ///<summary>
+    /// Generates secured hashes using the .NET Cryptograpghy API and the Bcrypt.NET library 
+    ///which provides developers with variant options for generation of secured hash password and also for validation.
+    ///</summary>
     public class AtHackerHashProvider
     {
-
+        /// <param name="PasswordToHash">The plain input for which a secured hash is generated.</param>
+        /// <param name="HashAlgorithm">The hash algorithm to be used for the generation of the secured hash.
+        ///if not specified, the library uses the BCRYPT hash function by default.</param>
+        /// <param name="OnlyHashRequired">It specifies that the hash result to be generated should not be salted.
+        ///If not specified the library generates a salted and secured hash password.</param>
+        /// <param name="IsEnhancedBCrypt">It ensures that the hash generated is created through the BCRYPT EnhancedHashPassword method. 
+        ///if overriden to be false the library generates an hash thorugh the hash password method. </param>
+        /// <returns>Bool: <see langword="true"/>  Or <see langword="false"/> Generates secured hashes using the .NET Cryptograpghy API and the Bcrypt.NET library 
+        ///which provides developers with variant options for generation of secured hash password.</returns>
         public static string GenerateHash(string PasswordToHash, string HashAlgorithm = "BCRYPT",
          bool OnlyHashRequired = false, bool IsEnhancedBCrypt = true)
         {
@@ -34,15 +46,16 @@ namespace AtHackers.Unifier
             #endregion  GenerateHash
             return hash;
         }
-        /// <summary>
-        /// Enhanced secure hashing algorithm that mixes multi iterations and multi algorithm 
-        /// types to create a more secure algorithm that should be more secure than a standard
-        /// Shw256 Hash that can be easily hacked using a table / dictionary lookup attacks.
-        /// </summary>
+       
+
         /// <param name="hashedPassword"> The Stored Hashed Password</param>
         /// <param name="plainInput"> The Plain Input Used For Storing The Password Hash</param>
         /// <param name="HashAlgorithm"> The Hash Algorithm For The Geneartion Of The Hash</param>
-        /// <returns>Bool: <see langword="true"/>  Or <see langword="false"/> for passwordhash and its plain text equivalent</returns>
+        /// <param name="IsEnhancedBCrypt">It ensures that the hash generated is created through the BCRYPT EnhancedHashPassword method. 
+        ///if overriden to be false the library generates an hash thorugh the hash password method. </param>
+        /// <returns>Bool: <see langword="true"/>  Or <see langword="false"/> It validates a stored user password which is generated using the Enhanced Bcrypt Algorithm or The SHA hash functions 
+        ///Provided by the AtHackers library against a plain input text. 
+        ///If not specified, a validation is made on the hashed password genrated with the BCRYPT hash function against the plain input text.</returns>
 
         public static bool ValidatePassword(string plainInput, string hashedPassword,
          string HashAlgorithm = "BCRYPT", bool IsEnhancedBCrypt = true)
