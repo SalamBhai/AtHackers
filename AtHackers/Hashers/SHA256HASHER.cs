@@ -6,6 +6,10 @@ using AtHackers.Exceptions;
 
 namespace AtHackers.Hashers
 {
+    ///<summary>
+    /// The AtHackers' class that Generates secured hashes using the SHA256 Hash Function for
+    ///generation of secured hash password and also for validation. 
+    ///</summary>
     public class SHA256HASHER : BaseHasher
     {
         #region GenerateFinalHashSHA256 

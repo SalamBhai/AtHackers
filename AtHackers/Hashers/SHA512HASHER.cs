@@ -1,4 +1,3 @@
-using System;
 using System.Security.Cryptography;
 using System.Text;
 using AtHackers.Abstractions;
@@ -6,6 +5,10 @@ using AtHackers.Exceptions;
 
 namespace AtHackers.Hashers
 {
+    ///<summary>
+    /// The AtHackers' class that Generates secured hashes using the SHA512 Hash Function for
+    ///generation of secured hash password and also for validation. 
+    ///</summary>
     public class SHA512HASHER : BaseHasher
     {
         #region GenerateFinalHashSHA512

@@ -7,6 +7,10 @@ using AtHackers.Exceptions;
 
 namespace AtHackers.Hashers
 {
+    ///<summary>
+    /// The AtHackers' class that Generates secured hashes using the SHA384 Hash Function for
+    ///generation of secured hash password and also for validation. 
+    ///</summary>
     public class SHA384HASHER : BaseHasher
     {
         #region GenerateFinalHashSHA384

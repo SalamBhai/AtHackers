@@ -3,6 +3,10 @@ using AtHackers.Exceptions;
 
 namespace AtHackers.Hashers
 {
+    ///<summary>
+    /// The AtHackers' class that Generates secured hashes using the Bcrypt.NET library for
+    ///generation of secured hash password and also for validation.
+    ///</summary>
     public class BCRYPTHASHER 
     {
         public static string GenerateHash(string Password, bool IsEnhancedBCrypt = true)
@@ -15,7 +19,7 @@ namespace AtHackers.Hashers
            }
         }
 
-
+        
         public static bool ValidatePassword(string InputText, string HashedPassword, bool IsEnhancedBCrypt = true)
         {
             if(string.IsNullOrEmpty(InputText) || string.IsNullOrEmpty(HashedPassword)) throw new ValueCannotBeNullException();

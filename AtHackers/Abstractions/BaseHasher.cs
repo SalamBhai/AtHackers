@@ -3,6 +3,10 @@ using System.Security.Cryptography;
 
 namespace AtHackers.Abstractions
 {
+     ///<summary>
+    /// The AtHackers' base class from which all the SHA Hash Functions of the AtHackers' Secure Hash Generator Classes inherits
+    /// and implements the functionalities of secured hash generation and validation
+    ///</summary>
     public abstract class BaseHasher
     {
        public abstract  string GenerateHash(string Password, bool OnlyHashRequired = false);
