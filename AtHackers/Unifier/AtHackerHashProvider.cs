@@ -23,7 +23,7 @@ namespace AtHackers.Unifier
         ///if overriden to be false the library generates an hash thorugh the hash password method. </param>
         /// <returns><see langword ="string"/>The secured hash password generated</returns>
         ///<exception cref="ValueCannotBeNullException"></exception>
-         ///<exception cref="ArgumentException"></exception>
+        ///<exception cref="ArgumentException"></exception>
         public static string GenerateHash(string PasswordToHash, string HashAlgorithm = "BCRYPT",
          bool OnlyHashRequired = false, bool IsEnhancedBCrypt = true)
         {
@@ -53,7 +53,7 @@ namespace AtHackers.Unifier
             #endregion  GenerateHash
             return hash;
         }
-       
+
         ///<summary> It validates a stored user password which is generated using the Enhanced Bcrypt Algorithm or The SHA hash functions 
         ///Provided by the AtHackers library against a plain input text. 
         ///If not specified, a validation is made on the hashed password genrated with the BCRYPT hash function against the plain input text. </summary>
@@ -67,7 +67,7 @@ namespace AtHackers.Unifier
         ///<exception cref="ValueCannotBeNullException"></exception>
         ///<returns>Bool: <see langword="true"/>  Or <see langword="false"/>The result from the validation of an input text
         ///against an hashed password</returns>
-       
+
         public static bool ValidatePassword(string plainInput, string hashedPassword,
          string HashAlgorithm = "BCRYPT", bool IsEnhancedBCrypt = true)
         {
