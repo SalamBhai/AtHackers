@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\AtHackers.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\AtHackers.csproj",
       "projectName": "AtHackers",
-      "projectPath": "c:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\AtHackers.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\AtHackers.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\AtHackers\\AtHackers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,6 +71,7 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
