@@ -18,3 +18,5 @@ security, hashing, password hashing, bcrypt, SHA-2, SHA-256, SHA-384, SHA-512, p
 
 **Empower your applications with ironclad security. Choose AtHackers today and fortify your users' passwords with state-of-the-art hashing algorithms. Visit our project repository for more information and documentation.**
 
+## Developer Contact:
+*Mail: saulasheriffdeen@gmail.com
